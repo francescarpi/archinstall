@@ -68,6 +68,7 @@ fi
 if [ "$OPCIO" = "3" ]; then
     echo
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    sudo pacman -S plasma sddm dolphin konsole flameshot chromium telegram-desktop openssh ark packagekit-qt5 kcalc
+    sudo pacman -S plasma sddm dolphin konsole flameshot chromium telegram-desktop openssh ark packagekit-qt5 kcalc bluez bluez-utils
     sudo systemctl enable sddm
+    sudo systemctl enable bluetooth
 fi
